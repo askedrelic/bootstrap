@@ -1,0 +1,59 @@
+DEPENDENCIES
+  apt
+  build-essential
+  cron
+  locales
+    git: https://github.com/redguide/locales
+    revision: ede842aa72a6c96f5452c2666e095f356dd551ec
+  ntp
+  papertrail
+    git: https://github.com/librato/papertrail-cookbook
+    revision: cbee6190b5471ce880c819aa8b9bd4dbb15a78ce
+  patch
+    git: https://github.com/jenssegers/chef-patch
+    revision: e93d11222e9f3e0230005b6b9964b32fc03ba9f9
+  python
+  ssh_known_hosts
+  sudo
+  sysctl
+  timezone-ii
+    git: https://github.com/L2G/timezone-ii
+    revision: 28c9e49c58c534e798cf01a77a9373c4c54f4587
+  yolo
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.9.2)
+  build-essential (2.2.4)
+  chef_handler (1.2.0)
+  compat_resource (12.5.26)
+  cron (1.7.3)
+  locales (0.4.0)
+  ntp (1.9.0)
+    windows (>= 0.0.0)
+  ohai (2.0.4)
+  papertrail (0.0.7)
+    rsyslog (>= 0.0.0)
+  partial_search (1.0.9)
+  patch (2.1.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  rsyslog (4.0.0)
+    compat_resource (>= 0.0.0)
+  ssh_known_hosts (2.0.0)
+    partial_search (>= 0.0.0)
+  sudo (2.7.2)
+  sysctl (0.7.0)
+    ohai (>= 0.0.0)
+  timezone-ii (0.2.9992)
+  user (0.4.2)
+  windows (1.39.0)
+    chef_handler (>= 0.0.0)
+  yolo (0.1.0)
+    timezone-ii (>= 0.0.0)
+    user (>= 0.0.0)
+  yum (3.8.2)
+  yum-epel (0.6.5)
+    yum (~> 3.2)
