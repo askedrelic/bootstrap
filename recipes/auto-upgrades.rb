@@ -5,8 +5,11 @@ service "cron" do
   action :enable
 end
 
+# Enable unattened upgrades
 package "unattended-upgrades"
-template "/etc/apt/apt.conf.d/10periodic" do
+
+# Add my config to perform security upgrades automatically
+template "/etc/apt/apt.conf.d/20auto-upgrades" do
   source "apt-periodic.erb"
   mode 0644
   notifies :reload, "service[cron]", :delayed
