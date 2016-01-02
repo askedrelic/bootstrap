@@ -17,6 +17,10 @@ suites:
     # test the role
     run_list:
       - role[base]
+    attributes:
+      # disable papertrail
+      papertrail:
+        remote_port: ""
     # test an individual recipe... or recipe combos
     # run_list:
     #   - recipe[apt]

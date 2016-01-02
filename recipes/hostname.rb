@@ -1,3 +1,4 @@
+# only do this in prod, or fix this in dev?
 hostname = 'frig'
 
 # Need a service, to know how to restart it

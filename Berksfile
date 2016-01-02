@@ -10,7 +10,8 @@ cookbook 'cron'
 cookbook 'sysctl'
 cookbook 'sudo'
 cookbook 'ssh_known_hosts'
-
+cookbook 'rsyslog'
+cookbook 'fail2ban'
 
 # cookbook 'chef-user'
 
