@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'chef'
 gem 'berkshelf'
 gem 'serverspec'
 gem 'test-kitchen'
