@@ -1,5 +1,8 @@
 DEPENDENCIES
   apt
+  bootstrap
+    path: .
+    metadata: true
   build-essential
   cron
   fail2ban
@@ -24,6 +27,9 @@ DEPENDENCIES
 
 GRAPH
   apt (2.9.2)
+  bootstrap (0.1.0)
+    timezone-ii (>= 0.0.0)
+    user (>= 0.0.0)
   build-essential (2.2.4)
   chef_handler (1.2.0)
   compat_resource (12.5.26)
