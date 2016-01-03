@@ -13,8 +13,6 @@ end
 # which requires my public ssh key to exist already...
 git '/home/askedrelic/.dotfiles' do
    repository 'https://github.com/askedrelic/dotfiles.git'
-   revision 'master'
-   checkout_branch 'master'
    action :checkout
    user 'askedrelic'
    group 'askedrelic'

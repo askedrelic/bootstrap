@@ -7,7 +7,6 @@ package "tcpdump"
 package "tree"
 package "vim"
 package "whois"
-package 'dig'
 
 # Better than top
 package 'htop'
