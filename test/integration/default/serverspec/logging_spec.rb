@@ -11,7 +11,7 @@ describe process("rsyslogd") do
   it { should be_running }
 end
 
-# This should be disabled, since it is overriden in the attributes.
+# Repeating msgs should be disabled, overriden in default attributes
 describe file('/etc/rsyslog.conf') do
   its(:content) { should match /RepeatedMsgReduction off/ }
 end

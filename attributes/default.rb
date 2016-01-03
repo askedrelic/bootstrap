@@ -10,7 +10,6 @@ default['fail2ban']['services'] = {
     "enabled" => "true",
     "port" => "ssh",
     "filter" => "sshd",
-    "logpath" => node['fail2ban']['auth_log'],
     "maxretry" => "2"
   },
 }

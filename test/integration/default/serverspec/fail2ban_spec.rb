@@ -19,3 +19,8 @@ end
 describe file('/etc/fail2ban/fail2ban.conf') do
   its(:content) { should match /logtarget = SYSLOG/ }
 end
+
+# Assuming syslog was setup, this file shouldn't exist?
+describe file ('/var/log/fail2ban.log') do
+  it { should_not exist }
+end

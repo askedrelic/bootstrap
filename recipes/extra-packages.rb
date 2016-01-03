@@ -1,15 +1,20 @@
 # Default packages
 
 # Essentials
-package "git"
-package "vim"
 package "curl"
-package "whois"
-package "tree"
+package "git"
 package "tcpdump"
+package "tree"
+package "vim"
+package "whois"
+package 'dig'
 
 # Better than top
 package 'htop'
+
+# Great git ncurses gui
+package 'tig'
+
 
 # Just in case...
 package "openssh-server"
@@ -59,6 +64,11 @@ package 'nethogs'
 # zrun: automatically uncompress arguments to command
 package 'moreutils'
 
+# Useful for debconf-get-selections and force setting things
+package 'debconf-utils'
+
+# Should install just the client; not the server...
+package 'mysql-client'
 
 # disabled from heavy audio/video dependencies
 # package "youtube-dl"

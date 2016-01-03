@@ -1,6 +1,6 @@
 # Enable security upgrades by default
 
-service "cron" do
+service 'cron' do
   supports :restart => true, :reload => true
   action :enable
 end
